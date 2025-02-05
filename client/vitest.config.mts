@@ -7,6 +7,9 @@ export default defineConfig({
   plugins: [tsconfigPaths(), react()],
   test: {
     environment: 'jsdom',
+    cache: {
+      dir: '.vitest_cache',
+    },
     
   },
 })
